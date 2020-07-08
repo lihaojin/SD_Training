@@ -1,0 +1,18 @@
+<a class="action" data-trigger="trigger">
+         Trigger Modal
+</a>
+<div data-bind="mageInit: {
+    'Magento_Ui/js/modal/modal':{
+    'type': 'popup',
+    'title': 'Popup title',
+    'trigger': '[data-trigger=trigger]',
+    'responsive': true,
+    'buttons': [{
+        text: jQuery.mage.__('Submit'),
+        class: 'action'
+    }]
+}}">
+    <div class="content">
+        Popup Content
+    </div>
+</div>
